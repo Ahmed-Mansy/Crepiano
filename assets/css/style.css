@@ -1,0 +1,215 @@
+.main-color {
+    color: #72253d;
+}
+
+html,
+body {
+    scrollbar-width: none;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-black\/30 {
+    background-color: rgba(31, 28, 28, .3);
+}
+
+.-z-10 {
+    z-index: -10;
+}
+
+.bg-video {
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.content {
+    z-index: 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.crepiano-logo {
+    width: 20%;
+}
+
+.content a {
+    padding: 1.25rem;
+    border-style: solid;
+    border-width: 2px;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.75rem;
+    border-color: white;
+    color: inherit;
+    text-decoration: none;
+}
+
+.content a:hover {
+    background-color: rgb(255 131 0);
+    border-color: rgb(255 131 0);
+}
+
+.content a:hover.menus {
+    background-color: rgb(0 121 52);
+    border-color: rgb(0 121 52);
+}
+
+.content a:hover.offers {
+    background-color: rgb(194 213 0);
+    border-color: rgb(194 213 0);
+
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+
+/* section photos */
+.photos {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.photos h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.webkit-clip-stroke {
+    -webkit-text-stroke: 2px #72253d;
+    -webkit-text-fill-color: transparent;
+}
+
+.rounded-card {
+    background-color: #FFF5EA;
+    border-radius: 10%;
+    padding: 5.2rem 2rem;
+    /* margin-left: 2rem; */
+    border: 3px solid orange;
+
+    transition: border 0.1s;
+}
+
+.text-grey {
+    color: rgb(103 102 104);
+}
+
+.rounded-card:hover {
+    cursor: pointer;
+    border-color: #72253d;
+    /* border: 3px solid orange; */
+}
+
+/* footer */
+
+footer {
+    background-image: url(../imgs/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer a {
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.social a {
+    font-size: 2rem;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: inherit;
+    padding: 0 0.3rem;
+}
+
+
+.border-top {
+    border-top: 1px solid #7c7c7c !important;
+}
+
+
+.bg-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-item a {
+    color: #72253d !important;
+}
+
+
+
+.test {
+    width: 330px;
+    height: 330px;
+    background-color: #72253d;
+}
+
+
+@media screen and (max-width: 580px) {
+    .flex-sm-column {
+        flex-direction: column !important;
+    }
+
+    .align-items-sm-start {
+        align-items: flex-start !important;
+    }
+}
+
+
+/* delivery */
+
+.delivery-pop {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.inner-details{
+    background-color: #7c7c7c;
+    width: 400px;
+    height: 400px;
+    color: white;
+    z-index: 1233333;
+}
