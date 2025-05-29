@@ -5,6 +5,7 @@
 html,
 body {
     scrollbar-width: none;
+    
 }
 
 .h-full {
@@ -194,6 +195,9 @@ footer a:hover {
 
     .align-items-sm-start {
         align-items: flex-start !important;
+    }
+    .mini{
+        width: 50%;
     }
 }
 
