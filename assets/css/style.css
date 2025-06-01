@@ -64,7 +64,7 @@ ul {
 }
 
 .crepiano-logo {
-    width: 20%;
+    width: 22%;
 }
 
 .content a {
@@ -101,6 +101,9 @@ ul {
 
 
 /* section photos */
+.right-corner,.left-corner{
+    width: 50%;
+}
 .photos {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -207,6 +210,13 @@ footer a:hover {
         width: 50%;
         
     }
+    .content h2 {
+    font-size: 3.5rem;
+    }
+    .crepiano-logo {
+    width: 30%;
+}
+
 }
 
 
