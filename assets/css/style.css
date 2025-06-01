@@ -122,8 +122,8 @@ ul {
 
 .rounded-card {
     background-color: #FFF5EA;
-    border-radius: 10%;
-    padding: 5.2rem 2rem;
+    border-radius: 15%;
+    padding: 2.2rem 2.2rem;
     /* margin-left: 2rem; */
     border: 3px solid orange;
 
@@ -139,6 +139,13 @@ ul {
     border-color: #72253d;
     /* border: 3px solid orange; */
 }
+
+.rounded {
+    border-radius: 4.25rem !important;
+}
+
+
+
 
 /* footer */
 
@@ -217,4 +224,72 @@ footer a:hover {
     height: 400px;
     color: white;
     z-index: 1233333;
+}
+
+
+
+/* offers */
+
+.item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.info {
+    
+    background-color: #f3d2bc;
+    position: absolute;
+    bottom: -40px;
+    width: 80%;
+    left: 10%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.myImg
+{
+    overflow: hidden;
+}
+img
+{
+    transition: all 0.4s 0.2s ease-in-out;
+}
+.item:hover img
+{
+    transform: scale(1.1);
+}
+.item:hover .info {
+
+    opacity: 1;
+    bottom: 20px;
+}
+#boxContainer
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+#innerBox
+{
+    width: 50%;
+    height: 600px;
+    background-image: url(../imgs/image4\ \(1\).png);
+    background-size: 100% 100%;
+}
+i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#boxContainer #close:hover
+{
+color: red;
+}
+#boxContainer #prev:hover,#boxContainer #next:hover
+{
+color: #09c;
 }
