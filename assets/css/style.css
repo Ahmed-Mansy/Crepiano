@@ -5,7 +5,7 @@
 html,
 body {
     scrollbar-width: none;
-    
+
 }
 
 .h-full {
@@ -101,9 +101,11 @@ ul {
 
 
 /* section photos */
-.right-corner,.left-corner{
+.right-corner,
+.left-corner {
     width: 50%;
 }
+
 .photos {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -123,24 +125,35 @@ ul {
     -webkit-text-fill-color: transparent;
 }
 
-.rounded-card {
+
+.row .col-md-4:nth-child(odd) .rounded-card{
     background-color: #FFF5EA;
     border-radius: 15%;
     padding: 2.2rem 2.2rem;
-    /* margin-left: 2rem; */
-    border: 3px solid orange;
+    border: 3px solid #FFF5EA;
 
     transition: border 0.1s;
 }
+.row .col-md-4:nth-child(even) .rounded-card {
+    background-color: #ffc6ce;
+    border-radius: 15%;
+    padding: 2.2rem 2.2rem;
+    border: 3px solid #ffc6ce;
+    transition: border 0.1s;
+}
+
+
 
 .text-grey {
     color: rgb(103 102 104);
 }
-
-.rounded-card:hover {
+.row .col-md-4:nth-child(even) .rounded-card:hover{
     cursor: pointer;
     border-color: #72253d;
-    /* border: 3px solid orange; */
+}
+.row .col-md-4:nth-child(odd) .rounded-card:hover{
+    cursor: pointer;
+    border-color: orange;
 }
 
 .rounded {
@@ -198,42 +211,36 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 580px) {
-    .flex-sm-column {
-        flex-direction: column !important;
-    }
-
-    .align-items-sm-start {
-        align-items: flex-start !important;
-    }
-    .mini{
-        width: 50%;
-        
-    }
-    .content h2 {
-    font-size: 2.8rem;
-    }
-    .crepiano-logo {
-    width: 30%;
-}
-
-}
-
-
 /* delivery */
 
 .delivery-pop {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    background: rgba(0,0,0,0.6);
+    z-index: 1050;
 }
 
-.inner-details{
-    background-color: #7c7c7c;
-    width: 400px;
-    height: 400px;
-    color: white;
-    z-index: 1233333;
+.inner-details {
+    background: #fff !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 8px 32px 0 rgba(34, 34, 34, 0.25);
+    color: #72253d !important;
+    min-width: 320px;
+    max-width: 350px;
+    padding: 2rem 1.5rem !important;
+    position: relative;
+    border: none;
+}
+
+.details a{
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+.whatsapp:hover{
+    color: #25D366;
+}
+.phone:hover{
+    color: #72253d;
 }
 
 
@@ -248,7 +255,7 @@ footer a:hover {
 }
 
 .info {
-    
+
     background-color: #f3d2bc;
     position: absolute;
     bottom: -40px;
@@ -257,25 +264,26 @@ footer a:hover {
     opacity: 0;
     transition: all 0.5s;
 }
-.myImg
-{
+
+.myImg {
     overflow: hidden;
 }
-img
-{
+
+img {
     transition: all 0.4s 0.2s ease-in-out;
 }
-.item:hover img
-{
+
+.item:hover img {
     transform: scale(1.1);
 }
+
 .item:hover .info {
 
     opacity: 1;
     bottom: 20px;
 }
-#boxContainer
-{
+
+#boxContainer {
     display: none;
     position: fixed;
     top: 0;
@@ -284,22 +292,81 @@ img
     right: 0;
     background-color: rgba(0, 0, 0, 0.54);
 }
-#innerBox
-{
-    width: 50%;
-    height: 600px;
+
+#innerBox {
+    width: 60%;
+    height: 80vh;
     background-image: url(../imgs/image4\ \(1\).png);
     background-size: 100% 100%;
 }
-i{
+
+i {
     font-size: 25px;
     cursor: pointer;
 }
-#boxContainer #close:hover
-{
-color: red;
+
+#boxContainer #close:hover {
+    color: red;
 }
-#boxContainer #prev:hover,#boxContainer #next:hover
-{
-color: #09c;
+
+#boxContainer #prev:hover,
+#boxContainer #next:hover {
+    color: #09c;
 }
+
+.menus #innerBox {
+    width: 80%;
+    height: 95vh;
+    background-image: url(../imgs/menu1.jpeg);
+    background-size: 100% 100%;
+}
+
+
+@media screen and (max-width: 580px) {
+    .flex-sm-column {
+        flex-direction: column !important;
+    }
+
+    .align-items-sm-start {
+        align-items: flex-start !important;
+    }
+
+    .mini {
+        width: 50%;
+
+    }
+
+    .content h2 {
+        font-size: 2.8rem;
+    }
+
+    .crepiano-logo {
+        width: 30%;
+    }
+
+    #innerBox {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .menus #innerBox {
+    width: 90%;
+    height: 40vh;
+    text-align: center;
+    object-fit: contain;
+    background-image: url(../imgs/menu1.jpeg);
+    background-size: 100% 100%;
+}
+
+}
+
+@media (max-width: 480px) {
+    .inner-details {
+        min-width: 90vw;
+        max-width: 95vw;
+        padding: 1rem !important;
+    }
+}
+
+
+

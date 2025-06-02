@@ -21,15 +21,29 @@
 
     <div style="display: none;" id="delivery-pop"
         class="delivery-pop position-absolute top-0 start-0 end-0 bottom-0 vh-100 justify-content-center align-items-center">
-        <div class="inner-details row justify-content-center align-items-center text-center">
-            <h3>Make your order now</h3>
-            <h4>01024365608</h4>
-            <h4>01287026857</h4>
+        <div class="inner-details row justify-content-center align-items-center text-center shadow-lg rounded-4 position-relative p-4 bg-white"
+            style="max-width: 350px;">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close"
+                onclick="document.getElementById('delivery-pop').style.display='none';"></button>
+            <div class="details w-100">
+                <img src="assets/imgs/delivery-icon.svg" alt="Delivery" width="60" class="mb-3 mt-2">
+                <h2 class="mb-4 text-main fw-bold" style="color:#72253d;">Order Now</h2>
+                <h5 class="mb-3 text-secondary">Make your order now</h5>
+                <a class="btn btn-success w-100 mb-3 d-flex align-items-center justify-content-center gap-2 py-2 fs-5"
+                    href="https://wa.me/+201068012263?text=Order%20from%20Crepiano" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp: 01024365608
+                </a>
+                <a class="btn btn-outline-main w-100 d-flex align-items-center justify-content-center gap-2 py-2 fs-5"
+                    href="tel:01287026857">
+                    <i class="fa-solid fa-phone"></i> Call: 01287026857
+                </a>
+            </div>
         </div>
     </div>
 
     <main>
-        <section class="best-crepe position-relative d-flex justify-content-center align-items-center vh-100 overflow-hidden">
+        <section
+            class="best-crepe position-relative d-flex justify-content-center align-items-center vh-100 overflow-hidden">
             <video loop muted autoplay play src="assets/imgs/desktop-video.mp4"
                 class="position-absolute h-full w-full"></video>
             <div class="position-absolute bg-video bg-black/30 w-full h-full"></div>
@@ -42,19 +56,20 @@
                         <a class="d-flex flex-column justify-content-center pt-2 pb-2 cursor-pointer delivery"
                             href="#"><img class="mx-auto" src="assets/imgs/delivery-icon.svg" height="50"
                                 alt="Order for delivery at Shawarmer">
-                            <div class="mt-2">Delivery</div>
+                            <div class="mt-2">Order Now</div>
                         </a>
                     </li>
                     <li>
-                        <a class="d-flex flex-column justify-content-center pt-2 pb-2 cursor-pointer offers" href="assets/pages/offers.html">
+                        <a class="d-flex flex-column justify-content-center pt-2 pb-2 cursor-pointer offers"
+                            href="assets/pages/offers.html">
                             <img class="mx-auto" src="assets/imgs/pickup-icon.svg" height="50"
                                 alt="Order for pickup at Shawarmer">
                             <div class="mt-2">Offers</div>
                         </a>
                     </li>
                     <li><a class="d-flex flex-column justify-content-center pt-2 pb-2 cursor-pointer menus"
-                            href="assets/pages/menu.html"><img class="mx-auto" src="assets/imgs/dining-icon.svg" height="50"
-                                alt="Order for dineIn at Shawarmer">
+                            href="assets/pages/menu.html"><img class="mx-auto" src="assets/imgs/dining-icon.svg"
+                                height="50" alt="Order for dineIn at Shawarmer">
                             <div class="mt-2">Menus</div>
                         </a></li>
                 </ul>
@@ -143,7 +158,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="cafe photos position-relative overflow-hidden">
             <img src="assets/imgs/right-texture.png" class="right-corner position-absolute end-0 top-0" alt="">
             <img src="assets/imgs/left-texture.png" class="left-corner position-absolute start-0 bottom-0" alt="">
@@ -153,38 +168,38 @@
                 <p class="fs-3 mb-4">You've come to the right place</p>
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                        
+
                         <div class="col-md-4 mt-5 p-md-3 p-5">
                             <div class="rounded-card">
                                 <img src="assets/imgs/cafe1.jpeg" class="w-100 rounded" alt="">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-4 mt-5 p-md-3 p-5">
                             <div class="rounded-card">
                                 <img src="assets/imgs/cafe2.jpeg" class="w-100 rounded" alt="">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-4 mt-5 p-md-3 p-5">
                             <div class="rounded-card">
                                 <img src="assets/imgs/cafe3.jpeg" class="w-100 rounded" alt="">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-4 mt-5 p-md-3 p-5">
                             <div class="rounded-card">
                                 <img src="assets/imgs/cafe4.jpeg" class="w-100 rounded" alt="">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-4 mt-5 p-md-3 p-5">
                             <div class="rounded-card">
                                 <img src="assets/imgs/cafe7.jpeg" class="w-100 rounded" alt="">
-                                
+
                             </div>
                         </div>
-                        
+
 
 
                     </div>

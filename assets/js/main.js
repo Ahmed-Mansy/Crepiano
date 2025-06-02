@@ -1,4 +1,4 @@
-
+let menuspic;
 
 $('.delivery').click(
     function(){
@@ -6,15 +6,50 @@ $('.delivery').click(
     }
 )
 $('#delivery-pop').click(
-    function () {
+    function (e) {
+      
+      if(e.target.getAttribute('id')=='delivery-pop'){
       $('.delivery-pop').fadeToggle()
     }
+    }
 )
-// $('.myImg img').click(
-//   function (){
-//     console.log('done')
+
+$('.carousel-item img').click(
+  function (e){
+    menuspic=e.target.src
+    $('.menus #boxContainer').addClass('d-flex')
+    $('#innerBox').css('backgroundImage',`url(${menuspic})`)
+    console.log($('#innerBox').css('backgroundImage'))
+    console.log(menuspic)
+  }
+)
+
+$('.menus #close').click(
+  function () {
+    $('.menus #boxContainer').removeClass('d-flex')
+  }
+)
+$('#boxContainer').click(
+  function (e) {
+    if(e.target.getAttribute('id')=='boxContainer'){
+      $('#boxContainer').removeClass('d-flex')
+    }
+  }
+)
+// $('.delivery').click(
+//   function () {
+//     $('.delivery-pop').addClass('d-flex')
 //   }
 // )
+// $('#delivery-pop').click(
+//   function (e) {
+//     if(e.target.getAttribute('id')=='delivery-pop'){
+//       $('.delivery-pop').removeClass('d-flex')
+//     }
+  
+//   }
+// )
+
 
 
 let myImgs = Array.from(document.querySelectorAll(".myImg img"));
@@ -85,3 +120,8 @@ boxContainer.addEventListener("click", function (e) {
         boxContainer.style.display = 'none';
     }
 })
+
+
+
+// menus ==================================
+
