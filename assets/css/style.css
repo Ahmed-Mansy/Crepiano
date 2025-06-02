@@ -405,7 +405,7 @@ img {
 }
 
 i {
-    font-size: 25px;
+    font-size: 2.2rem;
     cursor: pointer;
 }
 
@@ -415,7 +415,7 @@ i {
 
 #boxContainer #prev:hover,
 #boxContainer #next:hover {
-    color: #09c;
+    color: white;
 }
 
 .menus #innerBox {
