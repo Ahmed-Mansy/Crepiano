@@ -51,6 +51,16 @@ $('#boxContainer').click(
 // )
 
 
+$(document).ready(function(){
+  $('#loading .loader').fadeOut(500, ()=>{
+    $('#loading').fadeOut(400, ()=>{
+      $('#loading').remove();
+      $('body').css("overflow-y","auto");
+    })
+  })
+})
+
+
 
 let myImgs = Array.from(document.querySelectorAll(".myImg img"));
 let boxContainer = document.getElementById("boxContainer");
