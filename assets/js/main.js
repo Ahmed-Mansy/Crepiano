@@ -19,8 +19,7 @@ $('.carousel-item img').click(
     menuspic=e.target.src
     $('.menus #boxContainer').addClass('d-flex')
     $('#innerBox').css('backgroundImage',`url(${menuspic})`)
-    console.log($('#innerBox').css('backgroundImage'))
-    console.log(menuspic)
+
   }
 )
 
@@ -89,9 +88,7 @@ function nextSlide() {
     }
 
     let imgSrc = myImgs[currentIndex].getAttribute("src");
-    console.log(imgSrc)
     innerBox.style.backgroundImage = `url(${imgSrc})`;
-    console.log(innerBox)
 
 }
 
@@ -124,7 +121,6 @@ document.addEventListener("keyup", function (eventInfo) {
 })
 
 boxContainer.addEventListener("click", function (e) {
-    // console.log(e)
     if (e.target.getAttribute('id') == 'boxContainer') {
 
         boxContainer.style.display = 'none';
