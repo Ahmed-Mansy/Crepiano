@@ -6,12 +6,15 @@ html,
 body {
     scrollbar-width: none;
 }
-.h-25r{
+
+.h-25r {
     height: 25rem;
 }
-.h-18{
+
+.h-18 {
     height: 18rem;
 }
+
 #loading {
     position: fixed;
     top: 0%;
@@ -503,8 +506,14 @@ img {
     .carousel-control-prev {
         top: 17vh;
         bottom: 17vh;
+    }
 
+    .h-25r {
+        height: 20rem;
+    }
 
+    .h-18 {
+        height: 15rem;
     }
 
     @media (max-width: 480px) {

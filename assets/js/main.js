@@ -127,9 +127,4 @@ boxContainer.addEventListener("click", function (e) {
     }
 })
 
-
-
-
-
 // menus ==================================
-
