@@ -6,7 +6,12 @@ html,
 body {
     scrollbar-width: none;
 }
-
+.h-25r{
+    height: 25rem;
+}
+.h-18{
+    height: 18rem;
+}
 #loading {
     position: fixed;
     top: 0%;
@@ -399,7 +404,7 @@ img {
 
 #innerBox {
     width: 60%;
-    height: 80vh;
+    height: 90vh;
     background-image: url(../imgs/image4\ \(1\).png);
     background-size: 100% 100%;
 }
