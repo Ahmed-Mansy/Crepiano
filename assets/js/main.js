@@ -14,7 +14,7 @@ $('#delivery-pop').click(
     }
 )
 
-$('.carousel-item img').click(
+$('.owl-carousel div img').dblclick(
   function (e){
     menuspic=e.target.src
     $('.menus #boxContainer').addClass('d-flex')
@@ -51,6 +51,12 @@ $('#boxContainer').click(
 
 
 $(document).ready(function(){
+  $('.owl-carousel').owlCarousel(
+    {
+      items:1,
+      loop:true
+    }
+  );
   $('#loading .loader').fadeOut(500, ()=>{
     $('#loading').fadeOut(400, ()=>{
       $('#loading').remove();
